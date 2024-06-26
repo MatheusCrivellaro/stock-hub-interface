@@ -1,0 +1,7 @@
+.home-page {
+    background: #f2f5fa;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

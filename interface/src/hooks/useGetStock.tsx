@@ -12,26 +12,14 @@ const fetchStock = async (): AxiosPromise<Vehicle[]> => {
         }});
 }
 
-const extractUniqueColors = (vehicles: Vehicle[]): string[] => {
-    return vehicles.map(value => value.cor)
-};
-
 export function useGetStock() {
     const query = useQuery({
         queryFn: fetchStock,
         queryKey: ['get-stock']
     })
 
-    const data = query.data?.data
-
-    let colors: string[] = []
-
-    if (data)
-        colors = extractUniqueColors(data);
-
     return {
         ...query,
-        data: query.data?.data,
-        colors
+        data: query.data?.data
     }
 }

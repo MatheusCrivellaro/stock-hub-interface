@@ -1,4 +1,6 @@
 .container-nav {
+    background: #000;
+    width: 100vw;
 }
 
 .active-link {

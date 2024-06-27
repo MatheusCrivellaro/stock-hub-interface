@@ -1,4 +1,4 @@
 export interface Filters {
-    marca?: string;
-    colors?: string[];
+    marcas?: string[];
+    cores?: string[];
 }

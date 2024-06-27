@@ -3,7 +3,7 @@ import './CardLoading.css'
 const CardLoading = () => {
     return(
         <div className="card-loading col-4" aria-hidden="true">
-            <img src="/cinza.jpeg" className="card-img-top" alt="..."/>
+            <img src="/car-generic.JPG" className="card-img-top" alt="..."/>
                 <div className="card-body">
                     <h5 className="card-title placeholder-glow">
                         <span className="placeholder col-6"></span>

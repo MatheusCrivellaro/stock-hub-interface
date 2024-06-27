@@ -22,6 +22,7 @@ const fetchData = async(user: LoginData) => {
 
 export function useLogin() {
     return useMutation({
-        mutationFn: fetchData
+        mutationFn: fetchData,
+        retry: 2
     });
 }

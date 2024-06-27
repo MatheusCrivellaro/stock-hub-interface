@@ -8,25 +8,23 @@ function App() {
 
   return (
       <>
-          <nav className="navbar navbar-expand-lg container-nav bg-transparent fixed-top">
+          <nav className="navbar bg-body-tertiary">
               <div className="container-fluid">
-                  <Link className="navbar-brand" to="/home">StockHub</Link>
-                  <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                      <span className="navbar-toggler-icon"></span>
-                  </button>
-                  <div className="collapse navbar-collapse" id="navbarNav">
-                      <ul className="navbar-nav">
-                          <li className="">
-                              <NavLink className={({isActive}) => (isActive ? "active-link" : "link")}
-                                       to="/">Home</NavLink>
-                          </li>
-                          <li className="">
-                              <NavLink className={({isActive}) => (isActive ? "active-link" : "link")}
-                                       to="/login">Login</NavLink>
-                          </li>
-                      </ul>
-                  </div>
+                  <Link className="navbar-brand" to="/">
+                      <img src="/logo_autodealer.jpg" alt="Logo" width="30" height="24"
+                           className="d-inline-block align-text-top"/>
+                      Bootstrap
+                  </Link>
+                  <ul className="navbar-nav">
+                      <li className="">
+                          <NavLink className={({isActive}) => (isActive ? "active-link" : "link")}
+                                   to="/">Home</NavLink>
+                      </li>
+                      <li className="">
+                          <NavLink className={({isActive}) => (isActive ? "active-link" : "link")}
+                                   to="/login">Login</NavLink>
+                      </li>
+                  </ul>
               </div>
           </nav>
 

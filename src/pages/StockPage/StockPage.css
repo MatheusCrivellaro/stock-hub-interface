@@ -1,0 +1,41 @@
+.container-search {
+    background: #050033;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.container-stock {
+    display: flex;
+    width: 100vw;
+}
+
+.container-itens {
+    display: flex;
+    justify-content: start;
+    min-height: 100vh;
+    height: 100%;
+    padding-top: 50px;
+}
+
+.container-itens-loading {
+    display: flex;
+}
+
+.container-itens-empty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600;
+    min-height: 100vh;
+    height: 100%;
+}
+
+.div-color-select {
+    display: flex;
+}
+

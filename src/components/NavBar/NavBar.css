@@ -1,16 +1,17 @@
 .container-nav {
-    background: #000;
     width: 100vw;
 }
 
 .active-link {
+    font-size: 20px;
     text-decoration: none;
     margin-left: 15px;
     font-weight: 600;
-    color: #444;
+    color: #555;
 }
 
 .link {
+    font-size: 20px;
     text-decoration: none;
     margin-left: 15px;
     font-weight: 600;
@@ -18,7 +19,7 @@
 }
 
 .nav-title {
-    font-size: 20px;
+    font-size: 25px;
     text-decoration: none;
     color: #000;
     font-weight: 600;
@@ -33,15 +34,16 @@
 
 .navbar-stock-car {
     display: flex;
+    background: #e9eef7;
 }
 
 .nav-container {
-    padding: 15px 25px;
+    padding: 15px 40px;
 }
 
 .navbar-fixed-top {
     position: fixed;
-    background: #fff;
+    background: #e9eef7;
     width: 100vw;
-    z-index: 1;
+    z-index: 100;
 }

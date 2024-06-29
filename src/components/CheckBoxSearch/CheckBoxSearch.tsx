@@ -10,9 +10,8 @@ type props = {
 const CheckBoxSearch = ({ value, handle, name }: props) => {
     return (
         <div className="check-div">
-            <button className="button-collapse-search" type="button" data-bs-toggle="collapse"
-                    data-bs-target={"#collapse" + name} aria-controls={"collapse" + name}>
-                Button with data-bs-target
+            <button className="button-collapse-search" type="button" data-bs-toggle="collapse" data-bs-target={"#collapse" + name} aria-controls={"collapse" + name}>
+                {name}
             </button>
 
             <div className="div-marca-select collapse" id={"collapse" + name}>

@@ -29,7 +29,7 @@ const LoginForm = () => {
                 type="email"
                 value={username}
                 onChange={(e: React.ChangeEvent<HTMLInputElement>) => setUsername(e.target.value)}
-                className="form-camp shadow"
+                className="form-camp"
                 placeholder="Username"
                 aria-describedby="emailHelp"
             />
@@ -37,14 +37,14 @@ const LoginForm = () => {
                 type="password"
                 value={password}
                 onChange={(e: React.ChangeEvent<HTMLInputElement>) => setPassword(e.target.value)}
-                className="form-camp shadow"
+                className="form-camp"
                 placeholder="Password"
             />
             <input
                 type="text"
                 value={cnpj}
                 onChange={(e: React.ChangeEvent<HTMLInputElement>) => setCnpj(e.target.value)}
-                className="form-camp shadow"
+                className="form-camp"
                 placeholder="CNPJ"
             />
             <button type="submit" className="form-button">Entrar</button>

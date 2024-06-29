@@ -1,7 +1,21 @@
 .home-page {
-    background: #f2f5fa;
+    background: url("public/pexels-instasky-13580592.jpg");
+    background-position: top;
+    background-size: 220vh;
     height: 100vh;
+}
+
+
+
+.container-home {
+    padding: 0 110px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
+}
+
+.container-home h1 {
+    font-weight: 800;
+    color: #fff;
+    font-size: 60px;
 }

@@ -2,10 +2,10 @@ import './StockPage.css'
 import {useGetStock} from "../../hooks/useGetStock.tsx";
 import React, {useEffect, useState} from "react";
 import useFiltersVehicles from "../../hooks/useFiltersVehicles.tsx";
-import Card from "../../components/Card/Card.tsx";
 import useCollects from "../../hooks/useCollects.tsx";
-import CardLoading from "../../components/CardLoading/CardLoading.tsx";
 import CheckBoxSearch from "../../components/CheckBoxSearch/CheckBoxSearch.tsx";
+import {NavLink} from "react-router-dom";
+import StockVehicle from "../../components/StockVehicle/StockVehicle.tsx";
 
 const StockPage = () => {
 
@@ -46,36 +46,46 @@ const StockPage = () => {
     }, [selectedColors, selectedMarcas, setFilters]);
 
     return (
-        <div className="container-stock row">
-            <div className="container-search col-4">
-                <h2>Buscas</h2>
-
-                <CheckBoxSearch value={marcas} handle={handleMarcaChange} name="Marcas"/>
-                <CheckBoxSearch value={cores} handle={handleColorChange} name="Cores"/>
-
-            </div>
-            <div
-                className={(!isLoading ? ((filteredVehicles.length > 0) ? "container-itens col-8 row" : 'container-itens-empty col-8 row') : "col-8 row")}>
-                {isLoading &&
-                    <div className="container-itens-loading row">
-                        <CardLoading />
-                        <CardLoading />
-                        <CardLoading />
-                        <CardLoading />
-                        <CardLoading />
-                        <CardLoading />
-                        <CardLoading />
-                        <CardLoading />
+        <>
+            {isLoading ?
+                <div className="container-loading">
+                    <div className="spinner-border loading-item" role="status">
+                        <span className="visually-hidden">Loading...</span>
                     </div>
-                }
-                {filteredVehicles.length === 0 && !isLoading &&
-                    <div className="">Nada encontrado :(</div>
-                }
-                {filteredVehicles.map(vehicle => (
-                    <Card vehicle={vehicle} key={vehicle.codigo}/>
-                ))}
-            </div>
-        </div>
+                </div>
+                    :
+                    localStorage.getItem("token") ?
+                        <StockVehicle
+                            searchList={
+                                Array.of(
+                                    <CheckBoxSearch value={marcas} handle={handleMarcaChange} name="Marcas"/>,
+                                    <CheckBoxSearch value={cores} handle={handleColorChange} name="Cores"/>
+                                )
+                            }
+                            filteredVehicles={filteredVehicles}
+                        />
+                            :
+                        <div className="container-not-login row">
+                            <div className="painel-not-login col-8 shadow-lg">
+                                <div className="div-painel-not-login">
+                                    <h1>Faça primeiro o login</h1>
+                                    <p>Percebemos que você tentou acessar uma área especial do nosso site. Para garantir
+                                        que você tenha a melhor experiência possível, precisamos que você se cadastre
+                                        primeiro.</p>
+                                    <p>O cadastro é rápido e fácil, e você terá acesso a conteúdos exclusivos e muitas
+                                        outras vantagens!</p>
+                                    <p>Então, que tal se cadastrar agora? Estamos ansiosos para ter você conosco.</p>
+                                    <NavLink to="/login">
+                                        <button className="login-button">
+                                            Login
+                                        </button>
+                                    </NavLink>
+                                </div>
+                                <img className="" src="/public/pexels-akshay-mehra-302736-10834114.jpg" alt=""/>
+                            </div>
+                        </div>
+            }
+        </>
     );
 }
 

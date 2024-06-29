@@ -1,15 +1,21 @@
 .form-camp {
     border: 0;
-    border-radius: 10px;
-    background: #fff;
+    background: rgba(1,1,1,0);
+    border-bottom: 1px solid #ccc;
     margin-bottom: 20px;
-    padding: 15px;
+    padding: 5px 10px;
+    color: #fff;
+}
+
+.form-camp::placeholder {
+    color: #fff;
 }
 
 .form-button {
     border: 0;
-    border-radius: 10px;
-    background: #1f66ff;
-    color: #fff;
-    padding: 15px;
+    padding: 10px 40px;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
 }

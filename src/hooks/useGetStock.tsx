@@ -2,7 +2,7 @@ import axios, {AxiosPromise} from "axios";
 import {Vehicle} from "../interfaces/Vehicle.ts";
 import { useQuery } from "@tanstack/react-query";
 
-const API_URL = "http://18.217.180.0:8080"
+const API_URL = "http://api.sh.matheuscrivellaro.com.br:8080"
 
 const fetchStock = async (): AxiosPromise<Vehicle[]> => {
     return axios.get<Vehicle[]>(API_URL + '/stock/all', {

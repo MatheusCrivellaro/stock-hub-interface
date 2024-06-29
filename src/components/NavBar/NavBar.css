@@ -1,0 +1,47 @@
+.container-nav {
+    background: #000;
+    width: 100vw;
+}
+
+.active-link {
+    text-decoration: none;
+    margin-left: 15px;
+    font-weight: 600;
+    color: #444;
+}
+
+.link {
+    text-decoration: none;
+    margin-left: 15px;
+    font-weight: 600;
+    color: #000;
+}
+
+.nav-title {
+    font-size: 20px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}
+
+.nav-options {
+    display: flex;
+    justify-content: end;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-stock-car {
+    display: flex;
+}
+
+.nav-container {
+    padding: 15px 25px;
+}
+
+.navbar-fixed-top {
+    position: fixed;
+    background: #fff;
+    width: 100vw;
+    z-index: 1;
+}

@@ -1,6 +1,6 @@
 .container-search {
-    background: #101b2b;
-    color: #fff;
     display: flex;
     flex-direction: column;
+    color: black;
+    background: #F9FAFB;
 }

@@ -1,7 +1,7 @@
 import axios from "axios";
 import {useMutation} from "@tanstack/react-query";
 
-const API_URL = "http://api.sh.matheuscrivellaro.com.br:8080"
+const API_URL = "http://localhost:8080"
 
 type LoginData = {
     username: string,

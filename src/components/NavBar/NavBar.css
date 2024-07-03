@@ -34,7 +34,7 @@
 
 .navbar-stock-car {
     display: flex;
-    background: #e9eef7;
+    background: #F9FAFB;
 }
 
 .nav-container {
@@ -43,7 +43,7 @@
 
 .navbar-fixed-top {
     position: fixed;
-    background: #e9eef7;
+    background: #F9FAFB;
     width: 100vw;
     z-index: 100;
 }

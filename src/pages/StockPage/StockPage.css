@@ -4,6 +4,7 @@
     min-height: 100vh;
     height: 100%;
     padding-top: 50px;
+    background: #F9FAFB;
 }
 
 .container-itens-empty {
@@ -18,7 +19,7 @@
 }
 
 .container-not-login {
-    background: #e9eef7;
+    background: #F9FAFB;
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -45,7 +46,7 @@
 
 .div-painel-not-login {
     padding: 100px;
-    color: #ccc;
+    color: #F9FAFB;
 }
 
 .painel-not-login img {

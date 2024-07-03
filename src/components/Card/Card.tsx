@@ -12,10 +12,17 @@ const Card = ({ vehicle }: props) => {
         <div className="card-vehicle col-4">
             <Carousel fotos={vehicle.fotos.foto} placa={vehicle.placaVeiculo} key={vehicle.codigo + 'a'}/>
             <div>
-                <h2>{vehicle.modelo}</h2>
-                <p>{vehicle.cor}</p>
-                <p>{vehicle.marca}</p>
-                <p>R${vehicle.precoVenda}</p>
+                <p>Código: {vehicle.codigo}</p>
+                <p>PlacaVeiculo: {vehicle.placaVeiculo}</p>
+                <p>Marca: {vehicle.marca}</p>
+                <p>Modelo: {vehicle.modelo}</p>
+                <p>Versao: {vehicle.versao}</p>
+                <p>Combustivel: {vehicle.combustivel}</p>
+                <p>Cambio: {vehicle.cambio}</p>
+                <p>Cor: {vehicle.cor}</p>
+                <p>KM: {vehicle.km}</p>
+                <p>Carroceria: {vehicle.carroceria}</p>
+                <p>PrecoVenda: {vehicle.precoVenda}</p>
             </div>
         </div>
 

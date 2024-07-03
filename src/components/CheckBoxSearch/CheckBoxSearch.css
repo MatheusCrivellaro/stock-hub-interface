@@ -1,17 +1,17 @@
 .button-collapse-search {
     border: none;
     background: rgba(1,1,1,0);
-    color: #fff;
+    color: #000;
     font-size: 25px;
     font-weight: 600;
     width: 100%;
 }
 
 .check-div {
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #000;
     height: min-content;
 }
 
 .form-check-label {
-    color: #fff;
+    color: #000;
 }

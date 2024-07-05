@@ -7,6 +7,7 @@ const HomePage = () => {
             <div className="container-home col-12">
                 <h1>Bem Vindo ao StockHub</h1>
                 <p>Oi</p>
+                <p>Ola</p>
             </div>
         </div>
 

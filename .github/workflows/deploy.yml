@@ -2,7 +2,7 @@ name: Deploy via ftp
 on:
   push:
     branches:
-      - main  # ou a branch que você usa para deploy, como 'master'
+      - main
 
 jobs:
   deploy:

@@ -10,10 +10,10 @@ const Card = ({ vehicle }: props) => {
     return (
 
         <div className="card-vehicle col-4">
-            <Carousel fotos={vehicle.fotos.foto} placa={vehicle.placaVeiculo} key={vehicle.codigo + 'a'}/>
+            <Carousel fotos={vehicle.fotos.foto} placa={vehicle.placaveiculo} key={vehicle.codigo + 'a'}/>
             <div>
                 <p>Código: {vehicle.codigo}</p>
-                <p>PlacaVeiculo: {vehicle.placaVeiculo}</p>
+                <p>PlacaVeiculo: {vehicle.placaveiculo}</p>
                 <p>Marca: {vehicle.marca}</p>
                 <p>Modelo: {vehicle.modelo}</p>
                 <p>Versao: {vehicle.versao}</p>
@@ -22,7 +22,7 @@ const Card = ({ vehicle }: props) => {
                 <p>Cor: {vehicle.cor}</p>
                 <p>KM: {vehicle.km}</p>
                 <p>Carroceria: {vehicle.carroceria}</p>
-                <p>PrecoVenda: {vehicle.precoVenda}</p>
+                <p>PrecoVenda: {vehicle.precovenda}</p>
             </div>
         </div>
 
